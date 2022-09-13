@@ -43,13 +43,13 @@ public class Previa_2 {
     }
     private static double aumentar(int valor) throws HandledException{
         if(valor < 0 ) {
-            throw new HandledException(OUT_OF_RANGE_EXCEPTION,MessageFormat.format("El año {0} no puede ser negativo",valor));
+            throw new HandledException(OUT_OF_RANGE_EXCEPTION,MessageFormat.format("El valor {0} no puede ser negativo",valor));
         }
         return valor * porcentajeAumento;
     }
     private static double rebajar(int valor) throws HandledException{
         if(valor < 0 ) {
-            throw new HandledException(OUT_OF_RANGE_EXCEPTION,MessageFormat.format("El año {0} no puede ser negativo",valor));
+            throw new HandledException(OUT_OF_RANGE_EXCEPTION,MessageFormat.format("El valor {0} no puede ser negativo",valor));
         }
         return valor * (100 - porcentajeRebaja)/100;
     }
